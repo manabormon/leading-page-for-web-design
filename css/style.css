@@ -61,7 +61,7 @@ header{
 /* Header Section CSS End */
 
 #banner{
-    background-image: url(banner.jpg);
+    background-image: url(../images/banner.png);
     padding: 100px 0px;
     background-repeat: no-repeat;
     display: block;
@@ -427,11 +427,30 @@ header{
     height: 40px;
 }
 #addheading_section table{
-    justify-content: center;
-    display: flex;
+    /* justify-content: center;
+    display: flex; */
 }
-table, th, td {
+table, td {
     border-bottom:1px solid black;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 16px;
+  }
+  
+  th:first-child, td:first-child {
+    /* text-align: left; */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2
   }
 /* Add Heading Section CSS End */
 
@@ -505,6 +524,7 @@ table, th, td {
 }
 /* Story Section CSS End */
 
+/* Footer Section CSS Start */
 footer{
 
 }
@@ -549,3 +569,8 @@ footer{
     font-weight: 400;
     text-transform: uppercase;
 }
+/* Footer Section CSS End */
+
+
+
+  
