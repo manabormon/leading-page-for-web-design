@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --georama-font:"Georama", sans-serif;
+    --poppins-font:"Poppins", sans-serif;
+    --parimary-color:#F15926;
+    --secondary-color:#0B4B78;
+    --white-color:#ffffff;
+
+}
+.btn{
+    background-color: var(--parimary-color);
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins-font);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    transition: all 0.5 linear;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Section CSS Start */
+header{
+    padding-bottom: 15px;
+    box-shadow: 0 0 15px rgba(56, 63, 61, .15);
+}
+
+.header-top h2{
+    margin: 0, 0;
+    color:var(--white-color);
+    background-color: #298843;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.header_bottom{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+/* Header Section CSS End */
+
+#banner{
+    background-image: url(banner.jpg);
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#banner::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #00000052;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#banner .content{
+    position: relative;
+    z-index: 2;
+}
+#banner .content h1{
+    font-size: 63px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    line-height: 70px;
+    color: var(--white-color);
+    max-width: 800px;
+}
+#banner .content h4{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    line-height: 35px;
+    color: var(--white-color);
+    padding: 20px 0px;
+}
+#banner .content ul li{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    line-height: 24px;
+    color: var(--white-color);
+}
+#banner .content ul{
+    margin-left: 20px;
+}
+#banner .btn{
+    margin: 20px 0px;
+    border-radius: 50px;
+    z-index: 2;
+    position: relative;
+}
+/* Banner Section CSS End */
+
+/* About Section CSS Strat */
+#about_section{
+    padding: 60px 0;
+}
+#about_section .row{
+    display: flex;
+    gap: 50px;
+}
+#about_section .row .col{
+    max-width: 50%;
+    width: 100%;
+}
+#about_section .about_content h4{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+}
+#about_section .about_content h1{
+    color:var(--secondary-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+}
+#about_section .about_content p{
+    color:var(--secondary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    margin-top: 20px;
+}
+#about_section .btn{
+    margin: 20px 0px;
+    border-radius: 50px;
+}
+.about_image{
+    width: 585px;
+    height: 370px;
+}
+/* About Section CSS End */
+
+/* Service Section CSS Start */
+#servicer_section{
+    background-color: #f5f5f5;
+    padding: 70px 0px;
+}
+#servicer_section .servicer_content{
+
+}
+#servicer_section .servicer_content h1{
+    color:var(--secondary-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+}
+#servicer_section .servicer_content h4{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#servicer_section .row{
+    display: flex;
+    margin-top: 25px;
+    gap: 25px;
+}
+#servicer_section .col{
+    background-color: var(--white-color);
+    padding: 40px 20px;
+    border-radius: 5px;
+}
+#servicer_section .col h4{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+}
+#servicer_section .col p{
+    color:var(--secondary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    text-align: center;
+}
+/* Service Section CSS End */
+
+/* Product Section CSS Start */
+#product_section{
+    padding: 70px 0px;
+}
+#product_section .row{
+    display: flex;
+    margin-top: 25px;
+    gap: 50px;
+}
+#product_section .product_image{
+    width: 550px;
+    height: 580px;
+}
+
+#product_section .btn{
+    border-radius: 25px;
+    margin-top: 30px;
+}
+#product_section .col h4{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 115px;
+}
+#product_section .col h1{
+    color:var(--secondary-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+}
+#product_section ul{
+    margin: 20px 0px 0px 20px;
+}
+#product_section ul li{
+    color:var(--secondary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+}
+/* Product Section CSS End */
+
+/* Product_2 Section CSS Start */
+#product_2_section{
+    padding: 70px 0px;
+    background-color: #f5f5f5;
+}
+#product_2_section .row{
+    display: flex;
+    margin-top: 25px;
+    gap: 50px;
+}
+#product_2_section .product_2_image{
+    
+}
+#product_2_section .col h4{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 115px;
+}
+#product_2_section .col h1{
+    color:var(--secondary-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+}
+#product_2_section .col p{
+    color:var(--secondary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    margin-top: 15px;
+}
+#product_2_section .btn{
+    border-radius: 25px;
+    margin-top: 30px;
+}
+/* Product_2 Section CSS End */
+
+/* Product_3 Section CSS Start */
+#product_3_section{
+    padding: 70px 0px;
+}
+#product_3_section .row{
+    display: flex;
+    margin-top: 25px;
+    gap: 50px;
+}
+#product_3_section .col h4{
+    color:var(--parimary-color);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+#product_3_section .col h1{
+    color:var(--secondary-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    margin-top: 80px;
+}
+#product_3_section .col p{
+    color:var(--secondary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    margin-top: 15px;
+}
+#product_3_section .btn{
+    border-radius: 25px;
+    margin-top: 30px;
+}
+/* Product_3 Section CSS End */
+
+/* Product Service Section CSS Start */
+#product_servicer_section{
+    background-color: #f5f5f5;
+    padding: 70px 0px;
+}
+#product_servicer_section .servicer_content h1{
+    color:var(--secondary-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+}
+#product_servicer_section .row{
+    display: flex;
+    margin-top: 25px;
+    gap: 25px;
+}
+#product_servicer_section .col{
+    background-color: var(--white-color);
+    padding: 40px 20px;
+    border-radius: 5px;
+}
+#product_servicer_section .col h4{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+}
+#product_servicer_section .col p{
+    color:var(--secondary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    text-align: center;
+}
+/* Product Service Section CSS End */
+
+/* Add Heading Section CSS Start */
+
+#addheading_section{
+    background-color: #f5f5f5;
+    padding: 70px 0px;
+}
+#addheading_section h1{
+    color:var(--secondary-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+    margin-bottom: 40px;
+}
+#addheading_section h4{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 70px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+}
+#addheading_section h3{
+    color:var(--secondary-color);
+    font-size: 21px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+}
+#addheading_section .accept{
+    width: 40px;
+    height: 40px;
+}
+#addheading_section .remove{
+    width: 40px;
+    height: 40px;
+}
+#addheading_section table{
+    justify-content: center;
+    display: flex;
+}
+table, th, td {
+    border-bottom:1px solid black;
+  }
+/* Add Heading Section CSS End */
+
+/* Gallary Section CSS Start */
+#gallary{
+    padding: 70px 0px;
+}
+#gallary .row{
+    display: flex;
+    gap: 20px;
+}
+#gallary .col{
+    margin-top: 20px;
+    display: flex;
+}
+.gallary_image{
+    width: 290px;
+    height: 290px;
+}
+/* Gallary Section CSS End */
+
+/* Story Section CSS Start */
+#story{
+    padding: 70px 0px;
+    background-image: url(../images/story_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#story::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #00000052;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#story .btn{
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 10px 60px;
+    z-index: 2;
+    position: relative;
+
+}
+.btn_buy{
+    text-align: center;
+}
+#story h1{
+    color:var(--white-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+#story h4{
+    color:var(--white-color);
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+/* Story Section CSS End */
+
+footer{
+
+}
+.footer_top{
+    padding: 70px 0px;
+}
+.footer_logo{
+    text-align: center;
+}
+.footer_logo img{
+    width: 230px;
+    padding: 16px 0px;
+}
+.footer_top h3{
+    color: #298843;
+    font-size: 26px;
+    font-family: var(--poppins-font);
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.footer_top p{
+    color: #a2a2a2;
+    font-size: 14px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    line-height: 20px;
+}
+.footer_buton{
+    background-color: #298843;
+}
+.footer_buton .row{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+}
+.footer_buton h4{
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    text-transform: uppercase;
+}
