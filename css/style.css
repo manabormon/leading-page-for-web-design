@@ -57,6 +57,27 @@ header{
     justify-content: space-between;
     padding-top: 15px;
 }
+@media(max-width:767px){
+    header {
+        padding-bottom: 10px;
+    }
+    .header-top h2 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .header_bottom .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .header_bottom {
+        padding: 10px 15px 0px 15px;
+    }
+    .header_bottom .logo{
+        width: 100px;
+    }
+}
 
 /* Header Section CSS End */
 
@@ -115,6 +136,34 @@ header{
     z-index: 2;
     position: relative;
 }
+@media(max-width:767px){
+    #banner .content h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    #banner{
+        padding: 20px 15px;
+    }
+    #banner .content h4 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 10px;
+        padding: 20px 0px;
+    }
+    #banner .content ul li {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    #banner .btn {
+        padding: 8px 20px;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+
 /* Banner Section CSS End */
 
 /* About Section CSS Strat */
@@ -155,11 +204,52 @@ header{
     margin: 20px 0px;
     border-radius: 50px;
 }
-.about_image{
-    width: 585px;
-    height: 370px;
+@media(max-width:767px){
+    #about_section .row {
+       display: block; 
+    }
+    #about_section .row .col {
+        max-width: 100%;
+    }
+    #about_section {
+        padding: 30px 0;
+        margin: 0 15px;
+    }
+    #about_section .about_content h4 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    #about_section .about_content h1 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #about_section .about_content p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    #about_section .about_btn{
+        text-align: center;
+    }
+    #about_section .btn {
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    #about_section .about_image{
+        max-width: 290px;
+        text-align: center;
+
+    } 
 }
 /* About Section CSS End */
+
 
 /* Service Section CSS Start */
 #servicer_section{
@@ -213,7 +303,37 @@ header{
     font-family: var(--poppins-font);
     text-align: center;
 }
+
+@media(max-width:767px){
+    #servicer_section {
+        padding: 30px 0px;
+    }
+    #servicer_section .servicer_content h4 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    #servicer_section .servicer_content h1 {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #servicer_section .row {
+        gap: 15px;
+        flex-direction: column-reverse;
+        margin: 15px 15px;
+    }
+    #servicer_section .col h4 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
 /* Service Section CSS End */
+
 
 /* Product Section CSS Start */
 #product_section{
@@ -260,6 +380,54 @@ header{
     font-weight: 400;
     font-family: var(--poppins-font);
 }
+
+@media(max-width:767px){
+
+    #product_section {
+        padding: 30px 0px;
+        margin: 0 15px;
+    }
+    #product_section .row {
+        display: block;
+    }
+    #product_section .product_image {
+        max-width: 290px;
+        max-height: 290px;
+    }
+    #product_section .product__image{
+        text-align: center;
+    }
+    #product_section .col h4 {
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+    #product_section .col h1 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #product_section ul li {
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        list-style: none;
+    }
+    #product_section .btn {
+        margin-top: 20px;
+        padding: 6px 25px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .pro_btn{
+        text-align: center;
+    }
+}
 /* Product Section CSS End */
 
 /* Product_2 Section CSS Start */
@@ -304,6 +472,54 @@ header{
     border-radius: 25px;
     margin-top: 30px;
 }
+
+@media(max-width:767px){
+
+    #product_2_section {
+        padding: 30px 0px;
+        margin: 0 15px;
+    }
+    #product_2_section .row {
+        display: block;
+    }
+    #product_2_section .product_2_image {
+        max-width: 290px;
+        max-height: 290px;
+    }
+    #product_2_section .product__2_image{
+        text-align: center;
+    }
+    #product_2_section .col h4 {
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+    #product_2_section .col h1 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #product_2_section .col p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    #product_2_section .btn {
+        margin-top: 20px;
+        padding: 6px 25px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .pro_2_btn{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
 /* Product_2 Section CSS End */
 
 /* Product_3 Section CSS Start */
@@ -345,6 +561,54 @@ header{
     border-radius: 25px;
     margin-top: 30px;
 }
+
+@media(max-width:767px){
+
+    #product_3_section {
+        padding: 30px 0px;
+        margin: 0 15px;
+    }
+    #product_3_section .row {
+        display: block;
+    }
+    #product_3_section .product_3_image {
+        max-width: 290px;
+        max-height: 290px;
+    }
+    #product_3_section .product__3_image{
+        text-align: center;
+    }
+    #product_3_section .col h4 {
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+    #product_3_section .col h1 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #product_3_section .col p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    #product_3_section .btn {
+        margin-top: 20px;
+        padding: 6px 25px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .pro_3_btn{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
 /* Product_3 Section CSS End */
 
 /* Product Service Section CSS Start */
@@ -385,6 +649,35 @@ header{
     font-weight: 400;
     font-family: var(--poppins-font);
     text-align: center;
+}
+
+@media(max-width:767px){
+    #product_servicer_section {
+        padding: 30px 0px;
+    }
+    #product_servicer_section .product_servicer_section h4 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    #product_servicer_section .product_servicer_section h1 {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #product_servicer_section .row {
+        gap: 15px;
+        flex-direction: column-reverse;
+        margin: 15px 15px;
+    }
+    #product_servicer_section .col h4 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
 }
 /* Product Service Section CSS End */
 
@@ -470,6 +763,20 @@ table, td {
     width: 290px;
     height: 290px;
 }
+
+@media(max-width:767px){
+    #gallary .col{
+        margin-top: 20px;
+        display: block;
+    }
+    #gallary .row{
+        display: block;
+        text-align: center;
+    }
+    #gallary{
+        padding: 30px 0px;
+    }
+}
 /* Gallary Section CSS End */
 
 /* Story Section CSS Start */
@@ -522,6 +829,28 @@ table, td {
     z-index: 2;
     position: relative;
 }
+
+@media(max-width:767px){
+    #story{
+        padding: 30px 0px;
+        margin: 0 15px;
+    }
+    #story .btn{
+        margin-top: 30px;
+        padding: 8px 60px;
+        
+    }
+    #story h1{
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+    }
+    #story h4{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
 /* Story Section CSS End */
 
 /* Footer Section CSS Start */
@@ -568,6 +897,35 @@ footer{
     font-family: var(--poppins-font);
     font-weight: 400;
     text-transform: uppercase;
+}
+@media(max-width:767px){
+    .footer_top{
+        padding: 30px 0px;
+        margin: 0 15px;
+    }
+    .footer_logo img{
+        width: 150px;
+        padding: 0px 0px;
+    }
+    .footer_top h3{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    .footer_top p{
+        text-align: center
+    }
+    .footer_buton .row{
+        padding: 20px 0px;
+        display: block;
+        text-align: center;
+    }
+    .footer_buton h4{
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 /* Footer Section CSS End */
 
